@@ -3,7 +3,7 @@ import { DashBaseProps } from "props/dash";
 import { TextProps } from "props/text";
 import React from "react";
 
-interface Props extends TextProps, DashBaseProps {
+export interface Props extends TextProps, DashBaseProps {
     /** Content */
     children?: React.ReactNode;
 }
@@ -26,4 +26,4 @@ const Text = (props: Props) => {
 
 Text.defaultProps = {};
 
-export default Text;
+export { Text as default, Props as TextProps }

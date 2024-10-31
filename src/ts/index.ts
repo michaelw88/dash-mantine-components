@@ -94,6 +94,7 @@ import PasswordInput from "./components/core/input/PasswordInput";
 import PinInput from "./components/core/input/PinInput";
 import TextInput from "./components/core/input/TextInput";
 import Textarea from "./components/core/input/Textarea";
+import EditableText from "./components/core/input/EditableText";
 import List from "./components/core/list/List";
 import ListItem from "./components/core/list/ListItem";
 import Menu from "./components/core/menu/Menu";
@@ -206,6 +207,7 @@ export {
     Divider,
     DonutChart,
     Drawer,
+    EditableText,
     Fieldset,
     Flex,
     FloatingTooltip,

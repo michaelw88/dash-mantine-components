@@ -76,8 +76,8 @@ areaChart = dmc.AreaChart(
     tickLine="xy",
     withGradient=False,
     withXAxis=False,
-    withDots=False,
     withLegend=True,
+    highlightHover=True
 )
 
 lineChart = dmc.LineChart(
@@ -91,6 +91,7 @@ lineChart = dmc.LineChart(
         {"name": "Laptops", "color": "blue.6", "inactiveColor": "blue.1"},
         {"name": "Tablets", "color": "teal.6", "inactiveColor": "teal.1"},
     ],
+    highlightHover=True
 )
 
 scatter_data = data2 = [
@@ -232,6 +233,7 @@ compositeChart =  dmc.CompositeChart(
         {"name": "Laptops", "color": "blue.6", "type": "line"},
         {"name": "Tablets", "color": "teal.6", "type": "area"},
     ],
+    highlightHover=True
 ),
 
 

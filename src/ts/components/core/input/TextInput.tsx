@@ -4,9 +4,10 @@ import { BoxProps } from "props/box";
 import { DashBaseProps, PersistenceProps } from "props/dash";
 import { __BaseInputProps } from "props/input";
 import { StylesApiProps } from "props/styles";
+import { props } from "ramda";
 import React, { useEffect, useState } from "react";
 
-interface Props
+export interface Props
     extends BoxProps,
         StylesApiProps,
         __BaseInputProps,
@@ -18,6 +19,8 @@ interface Props
     spellCheck?: boolean;
     /** Debounce time in ms */
     debounce?: number;
+    /** ...*/
+    updateOnEnter?: number;
 }
 
 /** TextInput */
@@ -27,6 +30,7 @@ const TextInput = (props: Props) => {
         loading_state,
         value,
         debounce,
+        updateOnEnter,
         persistence,
         persisted_props,
         persistence_type,
@@ -64,4 +68,5 @@ TextInput.defaultProps = {
     persistence_type: "local",
 };
 
-export default TextInput;
+export { TextInput as default, Props as TextInputProps }
+

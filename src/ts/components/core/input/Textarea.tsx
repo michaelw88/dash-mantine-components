@@ -4,7 +4,7 @@ import { DashBaseProps, PersistenceProps } from "props/dash";
 import { TextareaProps } from "props/text";
 import React, { useEffect, useState } from "react";
 
-interface Props extends TextareaProps, DashBaseProps, PersistenceProps {
+export interface Props extends TextareaProps, DashBaseProps, PersistenceProps {
     /** Content */
     value?: string;
     /** Spell check property */
@@ -57,4 +57,4 @@ Textarea.defaultProps = {
     persistence_type: "local",
 };
 
-export default Textarea;
+export { Textarea as default, Props as TextareaProps }
